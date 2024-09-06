@@ -1,0 +1,186 @@
+/* ==================================== COMMON STYLES ====================================*/
+body {
+  color: #434455; /* 5. Цвет текста Slate*/
+  background-color: #ffffff; /* 5. Цвет фона по умолчанию*/
+  font-family: 'Roboto', sans-serif; /* Основной шрифт для документа */
+  font-weight: 400; /* Вес шрифта по умолчанию */
+}
+
+a {
+  color: inherit;
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+ul,
+ol {
+  list-style-type: none; /* Убираем маркеры в списках */
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+button {
+  cursor: pointer;
+}
+/* ==================================== /COMMON STYLES ====================================*/
+
+/* ==================================== HEADER STYLES ==================================== */
+
+/* ====================================header logo ==================================== */
+
+.page-logo {
+  font-family: 'Raleway', sans-serif; /* шрифт для логотипа */
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-web {
+  color: #4d5ae5;
+}
+.logo-studio {
+  color: #2e2f42;
+}
+
+/* ==================================== header navigation ==================================== */
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
+.nav-link-active:active {
+  text-decoration: underline;
+}
+/* ==================================== header address ==================================== */
+
+.address-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
+}
+/* ==================================== /HEADER STYLES ==================================== */
+
+/* ==================================== MAIN STYLES==================================== */
+
+/* ==================================== maine hero ====================================*/
+
+.section-hero {
+  background-color: #2e2f42;
+  width: 1440px;
+  height: 600px;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.button-style {
+  color: white; /* Цвет текста кнопки */
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 #00000026;
+  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.button-style:hover {
+  background: #404bbf;
+}
+
+/* ==================================== maine studio  ====================================*/
+.title-studio {
+  display: none;
+}
+
+.title-benefits {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.text-benefits {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* ==================================== maine our team  ====================================*/
+
+.team-member {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
+.members-role {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+}
+
+/* ==================================== maine our porfolio ====================================*/
+.product-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.product-type {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/*==================================== /MAIN STYLES==================================== */
+
+/*==================================== FOOTER STYLES  ====================================*/
+
+.logo-studio-footer {
+  color: #ffffff;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
