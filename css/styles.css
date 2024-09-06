@@ -61,7 +61,6 @@ button {
   font-style: normal;
 }
 .address-link {
-  font-style: normal 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -76,13 +75,14 @@ button {
 
 /* ==================================== MAIN STYLES==================================== */
 
-/* ==================================== maine hero ====================================*/
+/* ==================================== hero первая секция ====================================*/
 
 .section-hero {
   background-color: #2e2f42;
 }
 
-h1 {
+.hero-title {
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -91,7 +91,7 @@ h1 {
 }
 
 .button-style {
-  color: white; /* Цвет текста кнопки */
+  color: white;
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -99,14 +99,13 @@ h1 {
   letter-spacing: 0.04em;
 }
 
-.button-style:hover,
+.button-style:hover {
+  background: #404bbf;
+}
 .button-style:focus {
-background: #404BBF;
+  background: #404bbf;
 }
-/* ==================================== maine studio  ====================================*/
-.title-studio {
-  display: none;
-}
+/* ==================================== benefits вторая секция  ====================================*/
 
 .title-benefits {
   font-weight: 500;
@@ -123,9 +122,9 @@ background: #404BBF;
   color: #434455;
 }
 
-/* ==================================== maine our team  ====================================*/
-.team {
-  background: #F4F4FD;
+/* ====================================  our team  третья секция ====================================*/
+.team-section {
+  background: #f4f4fd;
 }
 
 .section-title {
@@ -134,9 +133,13 @@ background: #404BBF;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+.section-title {
   text-transform: capitalize;
 }
-.team-list {
+
+.team-list-item {
   background-color: #ffffff;
 }
 .team-member {
@@ -154,8 +157,11 @@ background: #404BBF;
   color: #434455;
 }
 
-/* ==================================== maine our porfolio ====================================*/
-.portfolo-title {
+/* ==================================== our porfolio четвертая секция  ====================================*/
+.portfolio-section {
+  background-color: #ffffff;
+}
+.portfolio-title {
   text-transform: capitalize;
 }
 .product-name {
@@ -178,8 +184,18 @@ background: #404BBF;
 .footer {
   background-color: #2e2f42;
 }
+
+.page-logo-footer {
+  font-family: 'Raleway', sans-serif; /* шрифт для логотипа */
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
 .logo-studio-footer {
-  color: #ffffff;
+  color: #f4f4fd;
 }
 
 .footer-text {
