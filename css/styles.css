@@ -16,14 +16,6 @@ ol {
   list-style-type: none; /* Убираем маркеры в списках */
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
 button {
   cursor: pointer;
 }
@@ -69,6 +61,7 @@ button {
   font-style: normal;
 }
 .address-link {
+  font-style: normal 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -99,7 +92,6 @@ h1 {
 
 .button-style {
   color: white; /* Цвет текста кнопки */
-  box-shadow: 0 4px 4px 0 #00000026;
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -109,7 +101,7 @@ h1 {
 
 .button-style:hover,
 .button-style:focus {
-  background: #404bbf;
+background: #404BBF;
 }
 /* ==================================== maine studio  ====================================*/
 .title-studio {
@@ -133,10 +125,15 @@ h1 {
 
 /* ==================================== maine our team  ====================================*/
 .team {
-  background: #f4f4fd;
+  background: #F4F4FD;
 }
 
-.team-title {
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
   text-transform: capitalize;
 }
 .team-list {
