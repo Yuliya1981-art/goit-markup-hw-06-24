@@ -21,7 +21,6 @@ h2 {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
 }
 
@@ -41,11 +40,9 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.logo-web {
   color: #4d5ae5;
 }
+
 .logo-studio {
   color: #2e2f42;
 }
@@ -68,7 +65,9 @@ button {
   text-decoration: underline;
 }
 /* ==================================== header address ==================================== */
-
+.address {
+  font-style: normal;
+}
 .address-link {
   font-size: 16px;
   line-height: 1.5;
@@ -88,8 +87,6 @@ button {
 
 .section-hero {
   background-color: #2e2f42;
-  width: 1440px;
-  height: 600px;
 }
 
 h1 {
@@ -102,8 +99,6 @@ h1 {
 
 .button-style {
   color: white; /* Цвет текста кнопки */
-  width: 169px;
-  height: 56px;
   box-shadow: 0 4px 4px 0 #00000026;
   background: #4d5ae5;
   font-weight: 500;
@@ -112,10 +107,10 @@ h1 {
   letter-spacing: 0.04em;
 }
 
-.button-style:hover {
+.button-style:hover,
+.button-style:focus {
   background: #404bbf;
 }
-
 /* ==================================== maine studio  ====================================*/
 .title-studio {
   display: none;
@@ -137,13 +132,21 @@ h1 {
 }
 
 /* ==================================== maine our team  ====================================*/
+.team {
+  background: #f4f4fd;
+}
 
+.team-title {
+  text-transform: capitalize;
+}
+.team-list {
+  background-color: #ffffff;
+}
 .team-member {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
 }
 
@@ -151,11 +154,13 @@ h1 {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #434455;
 }
 
 /* ==================================== maine our porfolio ====================================*/
+.portfolo-title {
+  text-transform: capitalize;
+}
 .product-name {
   font-weight: 500;
   font-size: 20px;
@@ -173,7 +178,9 @@ h1 {
 /*==================================== /MAIN STYLES==================================== */
 
 /*==================================== FOOTER STYLES  ====================================*/
-
+.footer {
+  background-color: #2e2f42;
+}
 .logo-studio-footer {
   color: #ffffff;
 }
