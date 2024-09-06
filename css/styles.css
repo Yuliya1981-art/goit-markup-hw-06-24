@@ -92,7 +92,7 @@ button {
 
 .button-style {
   color: white;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -100,10 +100,10 @@ button {
 }
 
 .button-style:hover {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 .button-style:focus {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 /* ==================================== benefits вторая секция  ====================================*/
 
