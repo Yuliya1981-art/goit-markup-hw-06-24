@@ -324,7 +324,6 @@ main {
 .product-avatar {
   max-width: 360px;
   max-height: 360px;
-  margin-bottom: 32px;
 }
 .portfolio-list-item {
   max-width: calc((100% - 24px * 2) / 3);
