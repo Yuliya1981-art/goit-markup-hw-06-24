@@ -1,4 +1,10 @@
 /* ==================================== COMMON STYLES ====================================*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   color: #434455; /* 5. Цвет текста Slate*/
   background-color: #ffffff; /* 5. Цвет фона по умолчанию*/
@@ -6,22 +12,76 @@ body {
   font-weight: 400; /* Вес шрифта по умолчанию */
 }
 
-a {
-  color: inherit;
-  text-decoration: none; /* Убираем подчеркивание */
+.all-page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-ul,
-ol {
-  list-style-type: none; /* Убираем маркеры в списках */
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 button {
   cursor: pointer;
 }
+
+img {
+  display: block;
+  /*max-width: 100%;*/
+}
+a {
+  color: inherit;
+  text-decoration: none; /* Убираем подчеркивание */
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.visualli-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* ==================================== RESET STYLES ====================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* Убираем маркеры в списках */
+}
+
 /* ==================================== /COMMON STYLES ====================================*/
 
 /* ==================================== HEADER STYLES ==================================== */
+.page-header {
+  border-bottom: #e7f9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 /* ====================================header logo ==================================== */
 
@@ -38,15 +98,29 @@ button {
 .logo-studio {
   color: #2e2f42;
 }
-
+.logo-header {
+  padding: 24px 0;
+  margin-right: 76px;
+}
 /* ==================================== header navigation ==================================== */
+.page-nav {
+  display: flex;
+  align-items: center;
+}
 
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -57,18 +131,25 @@ button {
   text-decoration: underline;
 }
 /* ==================================== header address ==================================== */
-.address {
+.contacts {
   font-style: normal;
+  margin-left: auto;
 }
-.address-link {
+.contacts-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: block;
+  padding: 24px 0;
 }
-
-.address-link:hover,
-.address-link:focus {
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.contacts-link:hover,
+.contacts-link:focus {
   color: #404bbf;
 }
 /* ==================================== /HEADER STYLES ==================================== */
@@ -76,6 +157,10 @@ button {
 /* ==================================== MAIN STYLES==================================== */
 
 /* ==================================== hero первая секция ====================================*/
+
+main {
+  flex-grow: 1;
+}
 
 .section-hero {
   background-color: #2e2f42;
@@ -88,6 +173,11 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 188px;
+  margin-bottom: 48px;
+  max-width: 496px;
 }
 
 .button-style {
@@ -97,8 +187,20 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  border-radius: 4px;
+  padding: 16px 32px;
 }
-
+button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 188px;
+}
 .button-style:hover {
   background-color: #404bbf;
 }
@@ -113,6 +215,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .text-benefits {
@@ -122,6 +225,13 @@ button {
   color: #434455;
 }
 
+.list-benefits {
+  display: flex;
+  gap: 24px;
+}
+.item-benefits {
+  max-width: calc((100% - 24px * 3) / 4);
+}
 /* ====================================  our team  третья секция ====================================*/
 .team-section {
   background: #f4f4fd;
@@ -134,14 +244,21 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
-}
-
-.section-title {
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
-
+.team-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 .team-list-item {
   background-color: #ffffff;
+  max-width: calc((100% - 24px * 3) / 4);
+}
+.team-avatar {
+  margin-bottom: 32px;
+  max-width: ;
 }
 .team-member {
   font-weight: 500;
@@ -149,13 +266,21 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
+.div-for-name-role {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .members-role {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 32px;
 }
 
 /* ==================================== our porfolio четвертая секция  ====================================*/
@@ -165,18 +290,38 @@ button {
 .portfolio-title {
   text-transform: capitalize;
 }
+.portfolio-list {
+  display: flex;
+  align-items: center;
+  row-gap: 48px;
+  column-gap: 24px;
+  flex-wrap: wrap;
+}
+
 .product-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-left: 16px;
+  margin-bottom: 8px;
 }
 .product-type {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-left: 16px;
+  margin-bottom: 32px;
+}
+.product-avatar {
+  max-width: 360px;
+  max-height: 360px;
+  margin-bottom: 32px;
+}
+.portfolio-list-item {
+  max-width: calc((100% - 24px * 2) / 3);
 }
 
 /*==================================== /MAIN STYLES==================================== */
@@ -184,16 +329,18 @@ button {
 /*==================================== FOOTER STYLES  ====================================*/
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
 }
 
 .page-logo-footer {
-  font-family: 'Raleway', sans-serif; /* шрифт для логотипа */
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 17.5px;
 }
 .logo-studio-footer {
   color: #f4f4fd;
@@ -204,4 +351,13 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 300px;
+  margin-right: auto;
+  padding-bottom: 100px;
+  margin-top: 17.5px;
+}
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
