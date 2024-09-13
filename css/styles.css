@@ -76,8 +76,9 @@ ol {
 
 /* ==================================== HEADER STYLES ==================================== */
 .page-header {
-  border-bottom: #e7f9fc;
+  border-bottom: 1px solid #e7f9fc;
 }
+
 .header-container {
   display: flex;
   align-items: center;
@@ -164,6 +165,7 @@ main {
 
 .section-hero {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -175,7 +177,6 @@ main {
   color: #ffffff;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 188px;
   margin-bottom: 48px;
   max-width: 496px;
 }
@@ -187,20 +188,16 @@ main {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
   border-radius: 4px;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
-button {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 188px;
-}
+
 .button-style:hover {
   background-color: #404bbf;
 }
@@ -258,7 +255,7 @@ button {
 }
 .team-avatar {
   margin-bottom: 32px;
-  max-width: ;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-member {
   font-weight: 500;
@@ -267,6 +264,7 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .div-for-name-role {
@@ -274,6 +272,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 32px 0;
 }
 .members-role {
   font-size: 16px;
@@ -281,6 +280,7 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
   margin-bottom: 32px;
+  text-align: center;
 }
 
 /* ==================================== our porfolio четвертая секция  ====================================*/
@@ -315,6 +315,12 @@ button {
   padding-left: 16px;
   margin-bottom: 32px;
 }
+
+.div-for-product-name-type {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .product-avatar {
   max-width: 360px;
   max-height: 360px;
@@ -329,7 +335,7 @@ button {
 /*==================================== FOOTER STYLES  ====================================*/
 .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 
 .page-logo-footer {
@@ -340,7 +346,8 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-bottom: 17.5px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-studio-footer {
   color: #f4f4fd;
@@ -353,11 +360,5 @@ button {
   color: #f4f4fd;
   max-width: 300px;
   margin-right: auto;
-  padding-bottom: 100px;
   margin-top: 17.5px;
-}
-.container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
