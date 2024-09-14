@@ -76,7 +76,7 @@ ol {
 
 /* ==================================== HEADER STYLES ==================================== */
 .page-header {
-  border-bottom: 1px solid #e7f9fc;
+  border-bottom: 1px solid#e7e9fc;
 }
 
 .header-container {
@@ -249,13 +249,14 @@ main {
   align-items: center;
   gap: 24px;
 }
+
 .team-list-item {
   background-color: #ffffff;
   max-width: calc((100% - 24px * 3) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-avatar {
   margin-bottom: 32px;
-  border-radius: 0px 0px 4px 4px;
 }
 .team-member {
   font-weight: 500;
