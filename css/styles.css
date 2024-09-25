@@ -129,7 +129,7 @@ ol {
   position: relative;
 }
 .current {
-  color: #404bbf; 
+  color: #404bbf;
 }
 
 .nav-link:hover,
@@ -319,8 +319,8 @@ main {
 .social-list-link svg {
   width: 16px;
   height: 16px;
-  fill: #ffffff; /* Цвет иконки */
 }
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -514,7 +514,6 @@ main {
   gap: 16px;
 }
 .social-list-item-footer {
-  
   width: 40px;
   height: 40px;
 }
@@ -525,7 +524,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-transition: background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
   background-color: #4d5ae5;
 }
@@ -540,5 +539,4 @@ transition: background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .social-list-link-footer svg {
   width: 16px;
   height: 16px;
-  fill: #ffffff; /* Цвет иконки */
 }
