@@ -194,6 +194,8 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .hero-title {
@@ -455,15 +457,16 @@ main {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
-  display: flex;
 }
+
 .container-footer {
-  margin-left: 0px;
+  margin-left: auto;
   display: flex;
   align-items: baseline;
 }
 .div-for-logo-text {
   margin-right: 120px;
+  padding-left: auto;
 }
 .page-logo-footer {
   font-family: 'Raleway', sans-serif;
@@ -492,15 +495,14 @@ main {
   margin-top: 17.5px;
 }
 .div-for-social-media-footer {
-  display: flex;
   max-width: 232px;
-  justify-content: center;
   margin-right: 16px;
   margin-bottom: 32px;
   margin-right: 16px;
   margin-left: 16px;
   margin-top: 8px;
 }
+
 .text-sosial-media {
   font-weight: 500;
   font-size: 16px;
@@ -508,14 +510,19 @@ main {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  padding-left: 0;
 }
 .social-list-footer {
   display: flex;
   gap: 16px;
+  justify-content: space-between;
 }
 .social-list-item-footer {
+  display: flex;
   width: 40px;
   height: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-list-link-footer {
