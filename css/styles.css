@@ -607,6 +607,7 @@ main {
 
 /*==================================== FOOTER STYLES  ====================================*/
 /*====================================modal window style====================================*/
+/* Стиль для фону модального вікна */
 .modal-backdrop {
   display: flex;
   justify-content: center;
@@ -629,6 +630,7 @@ main {
   pointer-events: auto;
 }
 
+/* Основні стилі для модального вікна */
 .modal {
   width: 408px;
   height: 80%;
@@ -641,6 +643,7 @@ main {
   border-radius: 4px;
 }
 
+/* Стиль кнопки закриття модального вікна */
 .modal-close-btn {
   position: absolute;
   top: 24px;
@@ -654,7 +657,7 @@ main {
   border-radius: 100%;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
@@ -663,6 +666,7 @@ main {
   stroke: #f4f4fd;
 }
 
+/* Стиль для слогану */
 .modal-slogan {
   max-width: 360px;
   font-weight: 500;
@@ -674,6 +678,13 @@ main {
   margin-bottom: 16px;
 }
 
+/* Стилі для форми */
+.review-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Стилі для полів форми */
 .review-form-field-wrapper {
   margin-bottom: 24px;
 }
@@ -686,62 +697,54 @@ main {
   margin-bottom: 4px;
 }
 
-.review-form-field-input {
-  width: 100;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  height: 40px;
-  background-color: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-left: 38px;
-  margin-bottom: 19px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-}
-.review-form-input-wrapper {
-  position: relative;
-}
+/* Стилі для інпутів */
 .review-form-input {
-  width: 100%;
-  height: 68px;
+  width: 100%; /* Зміна на 100% для коректного заповнення */
+  height: 40px;
   font-size: 18px;
   letter-spacing: -0.02em;
   color: #111111;
   border: 1px solid rgba(17, 17, 17, 0.05);
-  border-radius: 13px;
+  border-radius: 4px;
   background-color: transparent;
-  padding-left: 62px;
+  padding-left: 38px; /* Змінено на 38px для сумісності з іконкою */
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .review-form-input:focus {
   outline: none;
-  background-color: rgba(64, 75, 191, 1);
-  stroke: #2e2f42;
+  background-color: rgba(64, 75, 191, 0.1); /* Легке підсвічування */
+  border-color: rgba(64, 75, 191, 1);
+}
+
+/* Стиль для іконок */
+.review-form-input-wrapper {
+  position: relative;
 }
 
 .review-form-input-icon {
   position: absolute;
   top: 50%;
-  left: 24px;
+  left: 10px; /* Зменшено для кращого розміщення */
   transform: translateY(-50%);
   stroke: #2e2f42;
   fill: none;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .review-form-input:focus + .review-form-input-icon {
   stroke: rgba(64, 75, 191, 1);
 }
 
+/* Стиль для текстового поля коментаря */
 .review-form-comment {
-  width: 100;
+  width: 100%; /* Зміна на 100% для коректного заповнення */
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  height: 40px;
+  height: 80px; /* Збільшено для зручності */
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-left: 38px 38px;
-  margin-bottom: 19px;
-  font-size: 12px;
+  padding: 10px; /* Внутрішній відступ */
+  font-size: 14px; /* Змінено для кращого читання */
   line-height: 1.17;
   letter-spacing: -0.04em;
   color: #111111;
@@ -755,34 +758,21 @@ main {
 
 .review-form-comment:focus {
   outline: none;
-  border-color: 1px solid rgba(77, 90, 229, 1);
+  border-color: rgba(77, 90, 229, 1);
 }
-.review-form-input-wrapper {
-  position: relative;
-}
+
+/* Стиль для чекбокса */
 .review-form-checkbox-wrapper {
   margin-bottom: 40px;
 }
+
 .review-form-checkbox-label {
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
 }
-.review-form-input-item {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  stroke: #2e2f42;
-}
-.review-form-checkbox:checked + .review-form-checkbox-label > .review-form-custom-checkbox {
-  border-color: rgba(46, 47, 66, 0.4);
-  fill: rgba(46, 47, 66, 0.4);
-}
-.review-form-checkbox:focus + .review-form-checkbox-label > .review-form-custom-checkbox {
-  border-color: #4d5ae5;
-}
 
+/* Кастомний чекбокс */
 .review-form-custom-checkbox {
   display: inline-flex;
   justify-content: center;
@@ -796,10 +786,16 @@ main {
   margin-right: 12px;
 }
 
-.review-form-policy-link {
-  text-decoration: underline;
+.review-form-checkbox:checked + .review-form-checkbox-label > .review-form-custom-checkbox {
+  border-color: rgba(46, 47, 66, 0.4);
+  fill: rgba(46, 47, 66, 0.4);
 }
 
+.review-form-checkbox:focus + .review-form-checkbox-label > .review-form-custom-checkbox {
+  border-color: #4d5ae5;
+}
+
+/* Стиль для кнопки надсилання */
 .review-form-submit-btn {
   min-width: 117px;
   height: 45px;
@@ -818,4 +814,5 @@ main {
 .review-form-submit-btn:focus {
   background-color: #404bbf;
 }
+
 /*====================================/modal window style====================================*/
