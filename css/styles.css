@@ -610,10 +610,6 @@ main {
 /*====================================modal window style====================================*/
 /* Стиль для фону модального вікна */
 .modal-backdrop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 72px 24px 24px 24px;
   top: 0;
   left: 0;
   width: 100%;
@@ -621,13 +617,15 @@ main {
   background-color: rgba(46, 47, 66, 0.4);
   z-index: 9999;
   position: fixed;
-  opacity: 0;
-  pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal-backdrop.is-open {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 
@@ -655,7 +653,7 @@ main {
   right: 24px;
   background-color: #e7e9fc;
   padding: 0;
-  line-height: 0%;
+  line-height: 1;
   height: 24px;
   width: 24px;
   border-radius: 50%;
@@ -665,7 +663,6 @@ main {
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -681,6 +678,8 @@ main {
   fill: #ffffff;
 }
 .modal-close-icon {
+  width: 8px;
+  height: 8px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Стиль для слогану */
@@ -747,13 +746,11 @@ main {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  stroke: #2e2f42;
-  fill: none;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.review-form-input:focus + .review-form-input-icon {
-  fill: #4d5ae5;
+.review-form-input:focus .review-form-input-icon {
+  stroke: #4d5ae5;
 }
 
 /* Стиль для текстового поля коментаря */
@@ -814,24 +811,34 @@ main {
 .review-form-checkbox:focus + .review-form-checkbox-label > .review-form-custom-checkbox {
   border-color: #4d5ae5;
 }
-
+.review-form-policy-link {
+  color: #4d5ae5;
+}
 /* Стиль для кнопки надсилання */
-.review-form-submit-btn {
-  min-width: 117px;
-  height: 45px;
-  font-weight: 600;
-  font-size: 14px;
-  padding-left: 10px;
-  padding-right: 10px;
+.review-form-submit-button {
+  min-width: 169px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 16px 32px;
   border: none;
-  border-radius: 100px;
+  border-radius: 4px;
   background-color: #4d5ae5;
   color: #ffffff;
-  transition: color 250ms linear, background-color 250ms linear;
+  transition: background-color 250ms linear, background-color 250ms linear;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  display: block;
+  cursor: pointer;
+  font-family: 'Roboto';
 }
 
-.review-form-submit-btn:hover,
-.review-form-submit-btn:focus {
+.review-form-submit-button:hover {
+  background-color: #404bbf;
+}
+.review-form-submit-button:focus {
   background-color: #404bbf;
 }
 
