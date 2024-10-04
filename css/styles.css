@@ -733,10 +733,6 @@ main {
   color: #2e2f42;
 }
 
-.review-form-input:focus {
-  border-color: #4d5ae5;
-}
-
 .review-form-input-icon {
   position: absolute;
   left: 16px;
@@ -745,8 +741,11 @@ main {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.review-form-input-icon:focus + .review-form-input-icon {
+.review-form-input:focus + .review-form-input-icon {
   fill: #4d5ae5;
+}
+.review-form-input:focus {
+  border-color: #4d5ae5;
 }
 
 /* Стиль для текстового поля коментаря */
