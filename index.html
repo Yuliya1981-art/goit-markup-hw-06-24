@@ -40,10 +40,81 @@
               <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>
-              <a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              <a class="contacts-link " href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
+        <button class="burger-btn " type="button" data-menu-open>
+          <svg class="burger-icon" width="24px" height="24px">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+      </div>
+<!-------------------------------- mobile-menu -------------------------------->
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+           <button class="mobile-close-btn" type="button" data-menu-close>
+          <svg class="mobile-close-icon" width="8" height="8">
+            <use class="cross" href="./images/icons.svg#icon-close-black" width="8" height="8"></use>
+          </svg>
+        </button>
+        
+          <nav class="mobile-menu-nav" >
+            <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+              <a href="./index.html" class="mobile-nav-link">Studio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="" class="mobile-nav-link">Portfolio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="" class="mobile-nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mobile-contacts">
+          <ul class="mobile-contacts-list">
+            <li>
+              <a class="mobile-contacts-link tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            </ul>
+        </address>
+         <ul class="social-list">
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="#">
+                      <svg width="16" height="16" class="svg-social-media">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="#">
+                      <svg width="16" height="16" class="svg-social-media">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="#">
+                      <svg width="16" height="16" class="svg-social-media">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="#">
+                      <svg width="16" height="16" class="svg-social-media">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -54,12 +125,12 @@
       <section class="section section-hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button-style">Order Service</button>
+          <button type="button" class="button-style" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-----------------------------------/ hero первая секция -------------------------------->
 
-      <!-------------------------------- benefits вторая секция----------------------------->
+      <!-------------------------------- benefits вторая секция ----------------------------->
       <section id="studio" class="section section-studio">
         <div class="container">
           <h2 class="visually-hidden">Our Benefits</h2>
@@ -111,9 +182,9 @@
           </ul>
         </div>
       </section>
-      <!--------------------------------/ benefits вторая секция----------------------------->
+      <!--------------------------------/ benefits вторая секция ----------------------------->
 
-      <!----------------------------------------------Our Team третья секция -------------------------------------->
+      <!---------------------------------------------- Our Team третья секция -------------------------------------->
       <section class="section team-section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
@@ -488,9 +559,9 @@
     <!-------------------------------/footer------------------------------------------>
 
     <!-------------------------------modal window------------------------------------------>
-    <div class="modal-backdrop">
+    <div class="hidden modal-backdrop" data-menu>
       <div class="modal">
-        <button class="modal-close-btn" type="button">
+        <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use class="cross" href="./images/icons.svg#icon-close-black" width="8" height="8"></use>
           </svg>
@@ -566,5 +637,7 @@
     </div>
 
     <!-------------------------------/modal window ------------------------------------------>
+  <script src="./js/menu.js"></script>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
