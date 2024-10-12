@@ -464,6 +464,14 @@ main {
   max-height: 100%;
   max-width: 320px;
 }
+/* Ретина для мобильной версии */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section-hero {
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/hero-background-img/bi-mobile@2x.jpg');
+  }
+}
+
 .hero-title {
   font-weight: 700;
   font-size: 36px;
@@ -511,15 +519,22 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0 auto 36px;
     max-height: 100%;
   }
+
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     margin-bottom: 48px;
     max-width: 496px;
+  }
+}
+/* Ретина для планшета */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section-hero {
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/hero-background-img/bi-pad@2x.jpg');
   }
 }
 
@@ -533,11 +548,16 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0 auto 48px;
     width: 100%;
   }
 }
-
+/* Ретина для десктопа */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .section-hero {
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/hero-background-img/people-office@2x.jpg');
+  }
+}
 /* ==================================== benefits вторая секция  ====================================*/
 /* ==================================== мобильная версия ====================================*/
 .text-benefits {
@@ -781,7 +801,6 @@ main {
 
 .portfolio-section {
   background-color: #ffffff;
-  padding: 16px;
 }
 
 .portfolio-title {
@@ -954,7 +973,6 @@ main {
   color: #f4f4fd;
   max-width: 288px;
   text-align: left;
-  margin-bottom: 16px;
 }
 
 .text-sosial-media {
@@ -1078,7 +1096,6 @@ main {
 }
 
 .div-for-logo-text {
-  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1092,7 +1109,7 @@ main {
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
-    min-width: 768px;
+    max-width: 584px;
   }
 
   .div-for-logo-text {
@@ -1143,9 +1160,8 @@ main {
     flex-direction: row;
     align-items: baseline;
     flex-wrap: nowrap;
-    row-gap: 72px;
-    column-gap: 24px;
-    min-width: 1024px;
+    max-width: 1158px;
+    gap: 0;
   }
 
   .div-for-logo-text {
@@ -1181,10 +1197,6 @@ main {
   .form-subscribe-footer {
     gap: 24px;
     flex-direction: row;
-  }
-
-  .input-subscribe-footer {
-    width: 288px;
   }
 
   .subscribe-text-footer {
